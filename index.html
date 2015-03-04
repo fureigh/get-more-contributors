@@ -1,394 +1,571 @@
 <!doctype html>
 <html lang="en">
 
-	<head>
-		<meta charset="utf-8">
+    <head>
+        <meta charset="utf-8">
 
-		<title>reveal.js - The HTML Presentation Framework</title>
+        <title>Get more contributors! Lessons from the Drupal Ladder</title>
 
-		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
-		<meta name="author" content="Hakim El Hattab">
+        <meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+        <meta name="author" content="Hakim El Hattab">
 
-		<meta name="apple-mobile-web-app-capable" content="yes" />
-		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<link rel="stylesheet" href="css/reveal.min.css">
-		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+        <link rel="stylesheet" href="css/reveal.min.css">
+        <link rel="stylesheet" href="css/theme/default.css" id="theme">
 
-		<!-- For syntax highlighting -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
+        <!-- For syntax highlighting -->
+        <link rel="stylesheet" href="lib/css/zenburn.css">
 
-		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
-		<script>
-			if( window.location.search.match( /print-pdf/gi ) ) {
-				var link = document.createElement( 'link' );
-				link.rel = 'stylesheet';
-				link.type = 'text/css';
-				link.href = 'css/print/pdf.css';
-				document.getElementsByTagName( 'head' )[0].appendChild( link );
-			}
-		</script>
+        <!-- If the query includes 'print-pdf', include the PDF print sheet -->
+        <script>
+            if( window.location.search.match( /print-pdf/gi ) ) {
+                var link = document.createElement( 'link' );
+                link.rel = 'stylesheet';
+                link.type = 'text/css';
+                link.href = 'css/print/pdf.css';
+                document.getElementsByTagName( 'head' )[0].appendChild( link );
+            }
+        </script>
 
-		<!--[if lt IE 9]>
-		<script src="lib/js/html5shiv.js"></script>
-		<![endif]-->
-	</head>
+        <!--[if lt IE 9]>
+        <script src="lib/js/html5shiv.js"></script>
+        <![endif]-->
+    </head>
 
-	<body>
+    <body>
 
-		<div class="reveal">
+        <div class="reveal">
 
-			<!-- Any section element inside of this container is displayed as a slide -->
-			<div class="slides">
-				<section>
-					<h1>Reveal.js</h1>
-					<h3>HTML Presentations Made Easy</h3>
-					<p>
-						<small>Created by <a href="http://hakim.se">Hakim El Hattab</a> / <a href="http://twitter.com/hakimel">@hakimel</a></small>
-					</p>
-				</section>
+            <!-- Any section element inside of this container is displayed as a slide -->
+            <div class="slides">
+                <section>
+                    <h1>Get more contributors!</h1>
+                    <h3>Lessons from the Drupal Ladder</h3>
+                    <p>
+                        <small><a href="http://www.fureigh.com">Fureigh</a> / <a href="http://twitter.com/fureigh">@fureigh</a></small>
+                    </p>
+                </section>
 
-				<section>
-					<h2>Heads Up</h2>
-					<p>
-						reveal.js is a framework for easily creating beautiful presentations using HTML. You'll need a browser with
-						support for CSS 3D transforms to see it in its full glory.
-					</p>
+                <section>
+                    <h2>Hi, I'm Fureigh.</h2>
+                    <h4>(Obligatory introductory slide)</h4>
+                    <a class="image" href="http://www.fureigh.com" target="_blank">
+                        <img width="300" height="300" src="https://avatars0.githubusercontent.com/u/1244599?s=300" alt="headshot">
+                    </a><br />
+                    <ul>
+                        <li><a href="http://www.twitter.com/fureigh" target="_blank">@fureigh</a></li>
+                        <li>Code for America Fellow &mdash; <a href="http://www.codeforamerica.org/apply">apply!</a></li>
+                        <li class="fragment">Started NYC&rsquo;s Drupal Ladder meetups</li>
+                    </ul>
 
-					<aside class="notes">
-						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
-					</aside>
-				</section>
+                    <aside class="notes fragment">
+                        Hi, my name is Fureigh, my pronouns are they/their/them, and this year I’m a Code for America fellow working with the City of Long Beach, California in the area of healthcare. Fellowship applications are open through July 15th; come talk to me afterward if you’re interested in getting paid to work on open source projects to help solve cities’ problems.
+                    </aside>
 
-				<!-- Example of nested vertical slides -->
-				<section>
-					<section>
-						<h2>Vertical Slides</h2>
-						<p>
-							Slides can be nested inside of other slides,
-							try pressing <a href="#" class="navigate-down">down</a>.
-						</p>
-						<a href="#" class="image navigate-down">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
-					</section>
-					<section>
-						<h2>Basement Level 1</h2>
-						<p>Press down or up to navigate.</p>
-					</section>
-					<section>
-						<h2>Basement Level 2</h2>
-						<p>Cornify</p>
-						<a class="test" href="http://cornify.com">
-							<img width="280" height="326" src="https://s3.amazonaws.com/hakim-static/reveal-js/cornify.gif" alt="Unicorn">
-						</a>
-					</section>
-					<section>
-						<h2>Basement Level 3</h2>
-						<p>That's it, time to go back up.</p>
-						<a href="#/2" class="image">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="-webkit-transform: rotate(180deg);">
-						</a>
-					</section>
-				</section>
+<!--
+                    <aside class="notes">
+                        To open the speaker notes window, hit 's' on your keyboard.
+                    </aside>
+-->             </section>
 
-				<section>
-					<h2>Slides</h2>
-					<p>
-						Not a coder? No problem. There's a fully-featured visual editor for authoring these, try it out at <a href="http://slid.es" target="_blank">http://slid.es</a>.
-					</p>
-				</section>
+                <section>
+                    <h2>Ceci n'est pas une Drupal talk</h2>
+                    <ul>
+                        <li class="fragment">Get more people involved in your project</li>
+                        <li class="fragment">Increase the diversity of the group of people doing (and getting credit for) higher-status tasks</li>
+                    </ul>
 
-				<section>
-					<h2>Point of View</h2>
-					<p>
-						Press <strong>ESC</strong> to enter the slide overview.
-					</p>
-					<p>
-						Hold down alt and click on any element to zoom in on it using <a href="http://lab.hakim.se/zoom-js">zoom.js</a>. Alt + click anywhere to zoom back out.
-					</p>
-				</section>
+                    <aside class="notes">
+                        <p>But I’m here today because at the beginning of last year, I started organizing skill-building meetups in New York as a longtime Drupal developer who wanted to learn more and start contributing to core myself.</p>
 
-				<section>
-					<h2>Works in Mobile Safari</h2>
-					<p>
-						Try it out! You can swipe through the slides and pinch your way to the overview.
-					</p>
-				</section>
+                        <p>This is not a Drupal talk. It’s using the Drupal Ladder as a case study about how structured systems for step-by-step skill-building and engagement can, especially when coupled with a community element, help your project. It can be a secret weapon for getting more people involved and 2) increasing the diversity of the group of people doing (and getting credit for) higher-status tasks.</p>
+                    </aside>
+                </section>
 
-				<section>
-					<h2>Marvelous Unordered List</h2>
-					<ul>
-						<li>No order here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-					</ul>
-				</section>
+                <section>
+                    <h2>TL;DL:</h2>
+                    <p>Offering a structured approach for step-by-step skill-building can combat imposter syndrome and build community, thereby increasing the number and diversity of your project’s contributors.</p>
+<!--                    <p>The Drupal Ladder model &mdash; structured sequential skill-building approaches supported by regular meetups &mdash; can improve your project and your community</p>-->
 
-				<section>
-					<h2>Fantastic Ordered List</h2>
-					<ol>
-						<li>One is smaller than...</li>
-						<li>Two is smaller than...</li>
-						<li>Three!</li>
-					</ol>
-				</section>
+                    <aside class="notes">
+                        And if this is too long for you to listen, here's my main point:
+                    </aside>
+                </section>
 
-				<section data-markdown>
-					<script type="text/template">
-						## Markdown support
+                <section>
+                    <section>
+                        <h2>The problem</h2>
+                        <p>With great popularity comes great responsibility.</p>
 
-						For those of you who like that sort of thing. Instructions and a bit more info available [here](https://github.com/hakimel/reveal.js#markdown).
+                        <aside class="notes">
+                            <p>Drupal is the second most popular content management system in the world right now. It runs whitehouse.gov, major media sites like the Economist and the Weather Channel, and nonprofit sites from small community organizations all the way up to the Red Cross and Amnesty International.</p>
+                            <p>But as the number of Drupal sites and users exploded, the pool of core contributors didn’t keep pace. And in 2011, there started to be a lot of public conversation about burnout and burnout prevention.</p>
+                        </aside>
+                    </section>
 
-						```
-						<section data-markdown>
-						  ## Markdown support
+                    <section>
+                        <img src="./images/cms-learning-curve.png" alt="Drupal learning curve"/><br />
+                        <small>http://www.codem0nk3y.com/2012/04/what-bugs-me-about-modx-and-why/cms-learning-curve/</small>
 
-						  For those of you who like that sort of thing.
-						  Instructions and a bit more info available [here](https://github.com/hakimel/reveal.js#markdown).
-						</section>
-						```
-					</script>
-				</section>
+                        <aside class="notes">
+                        Now, Drupal has had a famously challenging learning curve. And that's changing, we're working on it. But even with a steep learning curve, there's room to make progress.
+                        </aside>
+                    </section>
 
-				<section id="transitions">
-					<h2>Transition Styles</h2>
-					<p>
-						You can select from different transitions, like: <br>
-						<a href="?transition=cube#/transitions">Cube</a> -
-						<a href="?transition=page#/transitions">Page</a> -
-						<a href="?transition=concave#/transitions">Concave</a> -
-						<a href="?transition=zoom#/transitions">Zoom</a> -
-						<a href="?transition=linear#/transitions">Linear</a> -
-						<a href="?transition=fade#/transitions">Fade</a> -
-						<a href="?transition=none#/transitions">None</a> -
-						<a href="?#/transitions">Default</a>
-					</p>
-				</section>
+                    <section>
+                        <blockquote cite="https://groups.drupal.org/node/180809">&ldquo;There are a small number of people who do the lion’s share of the work on core Drupal. As Drupal’s popularity sky-rockets, so does the volume of issues and sense of urgency for problems to get solved fast. But as Drupal’s code base becomes more complex, the learning curve for contributing to Drupal core gets steeper. Issues are being created faster than they can be resolved. And the core core team feels exhausted and burned out. Drupal needs more people to contribute to core.&rdquo;
+                        </blockquote>
+                        <caption>&mdash;<a href="https://groups.drupal.org/node/180809" target="_blank">bryanhirsch</a>, October 5, 2011
+                        </caption>
 
-				<section id="themes">
-					<h2>Themes</h2>
-					<p>
-						Reveal.js comes with a few themes built in: <br>
-						<a href="?#/themes">Default</a> -
-						<a href="?theme=sky#/themes">Sky</a> -
-						<a href="?theme=beige#/themes">Beige</a> -
-						<a href="?theme=simple#/themes">Simple</a> -
-						<a href="?theme=serif#/themes">Serif</a> -
-						<a href="?theme=night#/themes">Night</a> <br>
-						<a href="?theme=moon#/themes">Moon</a> -
-						<a href="?theme=solarized#/themes">Solarized</a>
-					</p>
-					<p>
-						<small>
-							* Theme demos are loaded after the presentation which leads to flicker. In production you should load your theme in the <code>&lt;head&gt;</code> using a <code>&lt;link&gt;</code>.
-						</small>
-					</p>
-				</section>
+                        <aside class="notes">
+                            Anybody experienced anything like this in your own projects?
+                        </aside>
+                    </section>
+                </section>
 
-				<section>
-					<h2>Global State</h2>
-					<p>
-						Set <code>data-state="something"</code> on a slide and <code>"something"</code>
-						will be added as a class to the document element when the slide is open. This lets you
-						apply broader style changes, like switching the background.
-					</p>
-				</section>
+                <section>
+                    <section>
+                        <h2>Enter the Drupal Ladder</h2>
+                        <h3 class="fragment">or &ldquo;The Boston Initiative&rdquo;</h3>
+                        <h4 class="fragment">(Thanks, @bryanhirsch!)</h4>
 
-				<section data-state="customevent">
-					<h2>Custom Events</h2>
-					<p>
-						Additionally custom events can be triggered on a per slide basis by binding to the <code>data-state</code> name.
-					</p>
-					<pre><code data-trim contenteditable style="font-size: 18px; margin-top: 20px;">
-Reveal.addEventListener( 'customevent', function() {
-	console.log( '"customevent" has fired' );
-} );
-					</code></pre>
-				</section>
+                        <aside class="notes">
+                            It was initially known as the “Boston Initiative,” because Bryan Hirsch, now at the White House, led its development at the Boston Drupal Meetup.
+                        </aside>
+                    </section>
+                    <section>
+                        <h2>Initial proposal</h2>
+                        <a href="https://groups.drupal.org/node/180809" target="_blank">
+                            <img height="600" src="./images/initial-proposal.png" alt="Screenshot of Bryan Hirsch's initial proposal">
+                        </a>
 
-				<section>
-					<section data-background="#007777">
-						<h2>Slide Backgrounds</h2>
-						<p>
-							Set <code>data-background="#007777"</code> on a slide to change the full page background to the given color. All CSS color formats are supported.
-						</p>
-						<a href="#" class="image navigate-down">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
-					</section>
-					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png">
-						<h2>Image Backgrounds</h2>
-						<pre><code>&lt;section data-background="image.png"&gt;</code></pre>
-					</section>
-					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" data-background-repeat="repeat" data-background-size="100px">
-						<h2>Repeated Image Backgrounds</h2>
-						<pre><code style="word-wrap: break-word;">&lt;section data-background="image.png" data-background-repeat="repeat" data-background-size="100px"&gt;</code></pre>
-					</section>
-				</section>
+                        <aside class="notes">
+                            Bryan's initial proposal, based on conversation at DrupalCon London, laid out a few key components:
+                        </aside>
+                    </section>
 
-				<section data-transition="linear" data-background="#4d7e65" data-background-transition="slide">
-					<h2>Background Transitions</h2>
-					<p>
-						Pass reveal.js the <code>backgroundTransition: 'slide'</code> config argument to make backgrounds slide rather than fade.
-					</p>
-				</section>
+                    <section>
+                        <h2>Key components</h2>
+                        <ul>
+                            <li class="fragment">A list of <em>all</em> the ways people contribute to Drupal core</li>
+                            <li class="fragment">Organizing that list into steps</li>
+                            <li class="fragment">A writeup of clear instructions for each step; make it easy to get up and running in 15 to 30 minutes</li>
+                            <li class="fragment">Explicit engagement of existing community infrastructure (Drupal user groups!)</li>
+                        </ul>
 
-				<section data-transition="linear" data-background="#8c4738" data-background-transition="slide">
-					<h2>Background Transition Override</h2>
-					<p>
-						You can override background transitions per slide by using <code>data-background-transition="slide"</code>.
-					</p>
-				</section>
+                        <aside class="notes">
+                            <ul>
+                                <li>A list of <em>all</em> the ways people contribute to Drupal core. Including rewriting issues so they’re clearer so they’re closer to being workable.</li>
+                                <li>Organizing that list into steps. “The first few steps are easy for anyone, minimal knowledge of Drupal required. As you climb higher up the ladder, taking any consecutive step up the ladder is within reach, as long as you’ve taken the first steps.”</li>
+                                <li>A writeup of clear instructions for each step that makes it easy to get up and running in 15 to 30 minutes, so people can make a meaningful contribution within an hour or two.</li>
+                                <li>Explicit engagement of existing community infrastructure: Drupal user groups!</li>
+                                <li>(Plus communication tools, community infrastructure (drupalladder.org and contact people), explicit invitation for Drupal user group leaders to implement this.)</li>
+                            </ul>
+                        </aside>
+                    </section>
 
-				<section>
-					<h2>Clever Quotes</h2>
-					<p>
-						These guys come in two forms, inline: <q cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						&ldquo;The nice thing about standards is that there are so many to choose from&rdquo;</q> and block:
-					</p>
-					<blockquote cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						&ldquo;For years there has been a theory that millions of monkeys typing at random on millions of typewriters would
-						reproduce the entire works of Shakespeare. The Internet has proven this theory to be untrue.&rdquo;
-					</blockquote>
-				</section>
+<!-- @maybe: cut? -->
+<!--                    <section>
+                        <h2>Initial leadership</h2>
+                        <ul>
+                            <li>Addison Berry (add1sun)</li>
+                            <li>Brock Boland (BrockBoland)</li>
+                            <li>Bryan Hirsch (bryanhirsch)</li>
+                            <li>Karyn Cassio (techgirlgeek)</li>
+                        </ul>
+                    </section>
+-->
 
-				<section>
-					<h2>Pretty Code</h2>
-					<pre><code data-trim contenteditable>
-function linkify( selector ) {
-  if( supports3DTransforms ) {
+                    <section>
+                        <a href="http://drupalladder.org/ladder/ee503327-50be-1904-8d04-9499098cad64" target="_blank">
+                            <img src="./images/drupal-core-ladder.png" alt="The Drupal Core Ladder">
+                        </a>
+                    </section>
 
-    var nodes = document.querySelectorAll( selector );
+                    <section>
+                        <a href="http://drupalladder.org/lesson/1d498fa2-d3e4-5754-9160-757d219e8032" target="_blank">
+                            <img src="./images/issue-queue.png" alt="Sample lesson: getting started in the issue queue">
+                        </a>
+                    </section>
 
-    for( var i = 0, len = nodes.length; i &lt; len; i++ ) {
-      var node = nodes[i];
+                    <!-- @todo: Add more of the issue queue page than the first 1000px?
+                    -->
 
-      if( !node.className ) {
-        node.className += ' roll';
-      }
-    }
-  }
-}
-					</code></pre>
-					<p>Courtesy of <a href="http://softwaremaniacs.org/soft/highlight/en/description/">highlight.js</a>.</p>
-				</section>
+                    <section>
+                        <h2>To recap:</h2>
+                        <ul>
+                            <li class="fragment">A series of HOWTOs people <em>can</em> use by themselves</li>
+                            <li class="fragment">Leverage existing community groups to 1) get work done and 2) build capacity</li>
+                        </ul>
 
-				<section>
-					<h2>Intergalactic Interconnections</h2>
-					<p>
-						You can link between slides internally,
-						<a href="#/2/3">like this</a>.
-					</p>
-				</section>
+                        <aside class="notes">
+                            So let’s note: the Drupal Ladder is a series of HOWTOs that people can use by themselves, but from the start, the idea was to leverage existing community groups to get work done and build capacity.
+                        </aside>
+                    </section>
 
-				<section>
-					<section id="fragments">
-						<h2>Fragmented Views</h2>
-						<p>Hit the next arrow...</p>
-						<p class="fragment">... to step through ...</p>
-						<ol>
-							<li class="fragment"><code>any type</code></li>
-							<li class="fragment"><em>of view</em></li>
-							<li class="fragment"><strong>fragments</strong></li>
-						</ol>
+                    <section>
+                        <h2>Which brings us to New York</h2>
+                        <h4>or, "So I started a Meetup"</h4>
 
-						<aside class="notes">
-							This slide has fragments which are also stepped through in the notes window.
-						</aside>
-					</section>
-					<section>
-						<h2>Fragment Styles</h2>
-						<p>There's a few styles of fragments, like:</p>
-						<p class="fragment grow">grow</p>
-						<p class="fragment shrink">shrink</p>
-						<p class="fragment roll-in">roll-in</p>
-						<p class="fragment fade-out">fade-out</p>
-						<p class="fragment highlight-red">highlight-red</p>
-						<p class="fragment highlight-green">highlight-green</p>
-						<p class="fragment highlight-blue">highlight-blue</p>
-						<p class="fragment current-visible">current-visible</p>
-						<p class="fragment highlight-current-blue">highlight-current-blue</p>
-					</section>
-				</section>
+                        <img src="./images/group-smiling.jpg" />
 
-				<section>
-					<h2>Spectacular image!</h2>
-					<a class="image" href="http://lab.hakim.se/meny/" target="_blank">
-						<img width="320" height="299" src="http://s3.amazonaws.com/hakim-static/portfolio/images/meny.png" alt="Meny">
-					</a>
-				</section>
+                        <aside class="notes">
+                            I’d been out of town a lot touring with the band I was in at the time, and I knew we were going to be back for more of the year than we usually were. I’ve been in the Drupal community since 2006, 2007, and I wanted to give back to Drupal and to the local community that’s been so important to me. I also wanted to finally start contributing to core.
+                        </aside>
+                    </section>
+                </section>
 
-				<section>
-					<h2>Export to PDF</h2>
-					<p>Presentations can be <a href="https://github.com/hakimel/reveal.js#pdf-export">exported to PDF</a>, below is an example that's been uploaded to SlideShare.</p>
-					<iframe id="slideshare" src="http://www.slideshare.net/slideshow/embed_code/13872948" width="455" height="356" style="margin:0;overflow:hidden;border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px" allowfullscreen> </iframe>
-					<script>
-						document.getElementById('slideshare').attributeName = 'allowfullscreen';
-					</script>
-				</section>
+                <section>
+                    <section>
+                        <h2>Which brings us to New York</h2>
+                        <h4>or, "So I started a Meetup"</h4>
 
-				<section>
-					<h2>Take a Moment</h2>
-					<p>
-						Press b or period on your keyboard to enter the 'paused' mode. This mode is helpful when you want to take distracting slides off the screen
-						during a presentation.
-					</p>
-				</section>
+                        <aside class="notes">
+                            I’d been out of town a lot touring with the band I was in at the time, and I knew we were going to be back for more of the year than we usually were. I’ve been in the Drupal community since 2006, 2007, and I wanted to give back to Drupal and to the local community that’s been so important to me. I also wanted to finally start contributing to core. [explain core vs. contrib?]
+                        </aside>
+                    </section>
 
-				<section>
-					<h2>Stellar Links</h2>
-					<ul>
-						<li><a href="http://slid.es">Try the online editor</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js">Source code on GitHub</a></li>
-						<li><a href="http://twitter.com/hakimel">Follow me on Twitter</a></li>
-					</ul>
-				</section>
+                    <section>
+                        <h2>HOWTO:</h2>
+                            <ol>
+                                <li>Environmental scan (see what's already being done)</li>
+                                <li class="fragment">Organize the thing; start somewhere</li>
+                                <li class="fragment">Recruit, recruit, recruit</li>
+                            </ol>
+                        <aside class="notes">
+                        <p>Drupal-Ladder-specific groups had started in other cities but there wasn’t yet one in New York. I reached out to the designated Drupal Ladder contact person and to the people running New York’s Drupal meetup group and they told me to run with it.</p>
 
-				<section>
-					<h1>THE END</h1>
-					<h3>BY Hakim El Hattab / hakim.se</h3>
-				</section>
+                        <p>So I arranged a space through New York Drupal Meetup contacts, posted an event to groups.drupal.org, and pitched the Ladder at the first New York Drupal Meetup of the year.</p>
+                        </aside>
+                    </section>
 
-			</div>
+                    <section>
+                        <h2>Know your motivation</h2>
+                            <p>&ldquo;Is your New Year’s resolution to learn more about Drupal 8? How about to give back to the Drupal community?&rdquo;</p>
+                        <aside class="notes">
+                        <p>I blatantly capitalized on people’s New Year’s resolutions.</p>
+                        </aside>
+                    </section>
+                </section>
 
-		</div>
+                <section>
+                    <section>
+                        <h2>Outreach is crucial</h2>
+                        <p>&ldquo;If you build it, they will come&rdquo; is a flawed design pattern.</p>
 
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.min.js"></script>
+                        <aside class="notes">
+                            I used the following tactics, with a hat tip to community organizing:
+                        </aside>
+                    </section>
 
-		<script>
+                    <section>
+                        <h2>Tactics</h2>
+                        <ul>
+                            <li>One-on-one outreach to get around the bystander effect and imposter syndrome <em>(but don't be creepy)</em></li>
+                            <li class="fragment">Promote through existing community channels</li>
+                        </ul>
 
-			// Full list of configuration options available here:
-			// https://github.com/hakimel/reveal.js#configuration
-			Reveal.initialize({
-				controls: true,
-				progress: true,
-				history: true,
-				center: true,
+                        <aside class="notes">
+                            <ul><li>One-on-one outreach to get around the bystander effect and imposter syndrome: (but don’t be creepy. respect people’s consent.)
+                            <ul><li>used people’s contact forms on drupal.org</li>
+                            <li>direct messages on Twitter</li>
+                            <li>one-on-one emails</li></ul></li>
+                            <li>Promoted through existing channels
+                            <ul><li>Drupal Meetup Group</li>
+                            <li>Community Twitter accounts</li>
+                            <li>We didn’t start a separate group on groups.drupal.org. So every time I posted a new meetup event, I posted it as a comment on the last one to make sure people who RSVPed for the previous event would know about it.
+                            or: “Post the next one to people who went to the last one”</li></ul></li></ul>
+                        </aside>
+                    </section>
 
-				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
-				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+                    <section>
+                        <h2>Tips</h2>
+                        <ul>
+                            <li>Assume the person reading it is new. Be welcoming and avoid jargon.</li>
+                            <li class="fragment">Be responsive. Be the nicest guy in the room.</li>
+                            <li class="fragment">Do your best to make it a positive experience for everyone.</li>
+                        </ul>
+                        <small><em>(Areas that do this well: anti-oppression trainings, effective volunteer management, community organizing.)</em></small>
 
-				// Parallax scrolling
-				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
-				// parallaxBackgroundSize: '2100px 900px',
+                        <aside class="notes">
+                            <ul><li>No matter how many events you’ve had, always assume the person reading it is new and make sure they see that they’d be welcome and able to tap in. Avoid jargon. Especially, with all due respect, if your event is called a “Drupal Ladder.”</li>
+                            <li>When people say they can’t make it, respond. When people ask questions, respond. Be responsive. Be the nicest guy in the room, even if that room is the internet.</li>
+                            <li>And do your best to make the event a positive experience for everyone so they’ll want to stay in the community.</li>
+                            </ul>
+                        </aside>
+                    </section>
+                </section>
 
-				// Optional libraries used to extend on reveal.js
-				dependencies: [
-					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
-					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
-					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
-				]
-			});
+                <section>
+                    <section>
+                        <h2>Challenges</h2>
 
-		</script>
+                        <aside class="notes">
+                            A few challenges I noticed over the course of the year:
+                        </aside>
+                    </section>
 
-	</body>
+                    <section>
+                        <h2>Trauma around school/structured learning</h2>
+
+                        <aside class="notes">
+                            <p>Many people have ____.</p>
+                            <p>And people have trauma around learning environments. People have to learn how to learn, not everybody feels equally safe experimenting or not immediately knowing something, and people have different levels of experience and comfort with self-directed learning or charting their own course, pun not intended.</p>
+                            <p>I have bad memories of being made to slowly click through follow-the-bouncing-ball-style computer classes as a kid, so it’s deeply important to me to not bore people. It’s also important to me that people not feel lost.</p>
+                            <p>So the same way I might send an agenda around before a meeting and invite people to propose changes, I tried to make space to ascertain consent. Today I’m thinking we’ll go through lesson X on the screen in the other room for about 45 minutes, then put it into practice for the next hour, then have a quick go-round at the end. How does that sound? Is there anything else someone wants to do? If you get bored, please feel empowered to dive right in or go do something else. Encouraging people to follow their interests.</p>
+
+                        </aside>
+                    </section>
+
+                    <section>
+                        <h2>Imposter syndrome</h2>
+                        <h4>and baggage around non-code contributions</h4>
+                        <p>
+                            In the words of the <a href="http://geekfeminism.wikia.com/wiki/Impostor_syndrome">Geek Feminism Wiki</a>:
+                        </p>
+                        <blockquote cite="http://geekfeminism.wikia.com/wiki/Impostor_syndrome">
+                            &ldquo;Impostor syndrome describes a situation where someone feels like an impostor or fraud because they think that their accomplishments are nowhere near as good as those of the people around them.<br />
+                            Usually, their accomplishments are just as good, and the person is applying an unfairly high standard to themself (and not to others).<br />
+                            It's especially common in fields where people's work is constantly under review by talented peers, such as academia or Open Source Software.&rdquo;
+                        </blockquote>
+
+                        <aside class="notes">
+                            People often have internalized stuff about that, which you have to specifically address in recruiting participants and continue to reinforce throughout.
+                        </aside>
+                    </section>
+
+                    <section>
+                        <h2>Explicit invitations</h2>
+                        <img src="./images/should-i-go-to.png" alt="Molly McLeod's 'Should I Go to CodeAcross?' flowchart" />
+
+                        <aside class="notes">
+                            Here's an example I like from my friend and current teammate Molly McLeod. It's for a civic hackathon but forkable for other things.
+                        </aside>
+                    </section>
+
+                    <section>
+                        <img src="./images/get-involved-with-core.png" alt="Get Involved with Core - DrupalCon PDX" />
+
+                        <aside class="notes">
+                            And here's the page for the "Get Involved with Core" sprint at DrupalCon Portland last year. Note the "who it's for" section. ANYONE WITH DRUPAL SITE BUILDING EXPERIENCE.
+                        </aside>
+                    </section>
+
+                    <section>
+                        <h2>All learning, <strike>no</strike> less tangible contribution</h2>
+                        <h4>Get in the water</h4>
+
+                        <aside class="notes">
+                            <p>The Drupal Ladder suggests having “learn sprints” and “issue sprints,” but we did half-and-half. Frankly, this was partly because I didn’t want people to show up only for the learn sprints and not the issue sprints.</p>
+                            <p>Even so, sometimes the check-outs would reveal that people were learning a lot but not putting it into practice… at least not for Drupal core, which was ostensibly the goal.</p><p>
+                            Some of this is about making sure people have clear tasks that they feel are well-matched to them. Some is about smiling and encouraging someone to try it Right Now. And some is about event structure. Having a standup-style “what will you work on for the next hour?” could have been helpful, but mostly it seemed to be about helping people stay focused on Actually Trying A Thing instead of reading more and more about it.</p>
+                        </aside>
+                    </section>
+
+                    <section>
+                        <h2>Start building capacity right away</h2>
+
+                        <aside class="notes">
+                            <p>Community organizers [and others?] talk about a “ladder of engagement.” You want to start moving people up right away so when your life takes other turns or you catch a cold or whatever, that doesn’t mean a dozen people don’t get to learn.</p>
+                            <p>This is mostly about individual volunteers, but also include back-up venues, sponsors, and other forms of capacity</p>
+                            <p>Community documentation can help too. Build scaffolding for new leaders.</p>
+                        </aside>
+                    </section>
+
+                    <section>
+                        <h2>Institutional memory</h2>
+                    </section>
+
+                    <section>
+                        <h2>Document and communicate</h2>
+
+                        <ol>
+                            <li>Sign-in sheet
+                            </li>
+                            <li>Take pictures (with consent) and post write-ups
+                            </li>
+                        </ol>
+
+                        <aside class="notes">
+                            <p>Have a sign-in sheet so you can know who’s coming regularly, how attendance numbers are doing, what seems to affect attendance. For instance, though people had been saying they wanted to meet every two weeks, at one point there was such a wealth of activities in the New York Drupal community that the Ladder was at the tail end of three weekends of events and attendance plummeted. (It was also the weekend before Passover and some folks had house cleaning to do.) Keeping some sense of the numbers meant I could say, “Hey, we had this many people before and last week only three showed up. [did gently and as non-shamingly as possible survey people about what happened] Let’s change our frequency for a bit and see how that goes.</p>
+                            <p>Take pictures (with consent)! Post write-ups of what you did and what people learned! Post them so people can see how much fun you’re having!</p>
+                        </aside>
+                    </section>
+                </section>
+
+                <section>
+                    <section>
+                        <h2>Outcomes for participants</h2>
+
+                        <ul>
+                            <li>Everyone made their first contributions to Drupal itself.</li>
+                            <li class="fragment">Increased skills</li>
+                            <li class="fragment">Some participants landed their first professional Drupal jobs</li>
+                            <li class="fragment">Network of Drupal friends</li>
+                            <li class="fragment">Confidence --> more contributions</li>
+                            <li class="fragment">Status that comes with contributing</li>
+                        </ul>
+
+                        <aside class="notes">
+                            Everyone made their first contributions to Drupal itself.<br />
+                            Increased skills: got comfortable with the popular version control system Git, learned to use the Drupal community’s tools (the issue queue, patches, and so on).<br />
+                            Some participants landed their first professional Drupal jobs.<br />
+                            Built community and a network. (or “Network of Drupal friends”)<br />
+                            Confidence: Many said the step-by-step approach and the in-person meetings helped them feel more confident that they had something to contribute. That makes people more likely to keep contributing.<br />
+                            And also, let’s be real, the status that comes with contributing.
+                        </aside>
+                    </section>
+
+                    <section>
+                        <h2>Outcomes for local community</h2>
+                        <aside class="notes">Increased capacity:
+                            – Expanded ecosystem
+                            – People who show up completely new to Drupal meet friendly faces and go to the regular Drupal meetup
+                            – Participants have stepped up into Camp organizing roles
+                            – Another piece of public culture of learning, building and contributing
+
+                            Plus, local pride.
+                        </aside>
+                    </section>
+
+                    <section>
+                        <h2>Outcomes for Drupal project</h2>
+                        <aside class="notes">
+                            Code contributions<br />
+                            Capacity building: some have also mentored new contributors at larger sprints (at DrupalCon<br />
+                            Increased diversity of group making and getting credit for contributions
+                        </aside>
+                    </section>
+                </section>
+
+
+                <section>
+                    <section>
+                        <h2>Benefits of a step-by-step process:</h2>
+                        <ul>
+                            <li class="fragment">Clear path to success for participants</li>
+                            <li class="fragment">...and for event organizers</li>
+                            <li class="fragment">Shared language and shared experiences can help build community</li>
+                            <li class="fragment">People can work on their own time</li>
+                        </ul>
+
+                        <aside class="notes">
+                            <ul><li>There’s a clear path to success.
+                            <ul><li>Once you’ve done these steps, you’ve used the skill! You’ve tried the thing! You can do it!</li></ul></li>
+                            <li>It’s easy for someone to pick up the curriculum, as it were, and run an event.
+                            <ul><li>Reusable components. (And since it’s an open source project, any time someone ran into issues it was an example of how you can scratch your own itch and contribute value by fixing something you discovered was missing/confusing/outdated/incorrect.)</li></ul></li>
+                            <li>Shared language and shared experience can help build community.</li>
+                            <li>People can work through more at their own pace. Some liked to rehearse before coming to the Ladder. Some would do the whole “learn sprint” at home.</li></ul>
+                        </aside>
+                    </section>
+
+                    <section>
+                        <h2>Benefits of the community element:</h2>
+                        <ul>
+                            <li class="fragment">You don't have to reinvent the outreach wheel</li>
+                            <li class="fragment">Accountability and motivation to keep going</li>
+                            <li class="fragment">More experienced people can help newer people</li>
+                            <li class="fragment">Tricks of the trade; we learn more from each other in person than the curriculum covers</li>
+                            <li class="fragment">Community members get to see what it’s like to work with/around each other</li>
+                            <li class="fragment">Networking --> economic empowerment</li>
+                            <li class="fragment">Model and learn good practices</li>
+                            <li class="fragment">Fun! (gasp)</li>
+                        </ul>
+
+                        <aside class="notes">
+                            <ul>
+                                <li>Lots of “hey, nice command line trick!” and “what text editor are you using?” and “I had that problem with my dev environment too, then I…”
+                                </li><li>Community members get a chance to see what it’s like to work with/around each other; useful for gauging possible work referrals, etc.</li>
+                                <li>It’s an informal networking event; job opportunities come up, people find people to work for/with them</li>
+                                <li>Opportunities to model and learn good practices</li>
+                                <li>Last but not least, some people think this is fun</li>
+                            </ul>
+                        </aside>
+                    </section>
+
+                    <section>
+                        <h2>Benefits to the project itself:</h2>
+                        <ul>
+                            <li class="fragment">The work itself: patches submitted, reviewed, issues cleaned up, etc.</li>
+                            <li class="fragment">More contributors with more skills</li>
+                            <li class="fragment">More people interested in and getting a chance to mentor and teach each other</li>
+                            <li class="fragment">Increased capacity in general!</li>
+                            <li class="fragment">—> decreased risk of burnout overall.</li>
+                    </section>
+                </section>
+
+                <section>
+                    <h2>Increase your contributor pool</h2>
+                    <ol>
+                    <li>A structured approach for step-by-step skill-building can be a secret weapon for 1) getting more people involved and 2) increasing the diversity of the group of people doing (and getting credit for) higher-status tasks.
+                    </li>
+                    <li>A community element can be helpful for continued motivation, encouragement, learning and networking.</li>
+                    </ol>
+
+                    <aside class="notes">
+                        <p>The Ladder model is a way your open source project can build community, combat imposter syndrome and encourage new contributors.
+                        </p><p>
+                        In the Drupal community, there have been more than 2x as many people mentioned in commit messages in Drupal 8 — which is not yet out — as there were in Drupal 7.
+                        </p><p>
+                        A structured approach for step-by-step skill-building can be a secret weapon for 1) getting more people involved and 2) increasing the diversity of the group of people doing (and getting credit for) higher-status tasks.
+                        A community element can be helpful for continued motivation, encouragement, learning and networking.
+                        </p><p>
+                        Thanks so much to everyone who’s worked on the Drupal Ladder and other mentoring initiatives to get more people involved in core.</p>
+                    </aside>
+                </section>
+
+                <section>
+                    <h1>Q&A+</h1>
+                    <h3>Fureigh / <a href="http://www.twitter.com/fureigh" target="_blank">@fureigh</a></h3>
+
+                    <aside class="notes">
+                        <ul>
+                        <li>Now I’d like to have a Q&A, but I also really want to learn from everyone who’s here and interested in this.</li>
+                        <li>What do you think? What are other structured approaches with which you’ve worked? Let’s leverage the expertise of people in the room.</li></ul>
+                    </aside>
+                </section>
+
+            </div>
+
+        </div>
+
+        <script src="lib/js/head.min.js"></script>
+        <script src="js/reveal.min.js"></script>
+
+        <script>
+
+            // Full list of configuration options available here:
+            // https://github.com/hakimel/reveal.js#configuration
+            Reveal.initialize({
+                controls: true,
+                progress: true,
+                history: true,
+                center: true,
+
+                theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+                transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+                // Parallax scrolling
+                // parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+                // parallaxBackgroundSize: '2100px 900px',
+
+                // Optional libraries used to extend on reveal.js
+                dependencies: [
+                    { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+                    { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+                    { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+                    { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+                ]
+            });
+
+        </script>
+
+    </body>
 </html>
